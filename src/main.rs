@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use anyhow::Result;
 #[cfg(feature = "gui")]
 use fltk::dialog::message;
