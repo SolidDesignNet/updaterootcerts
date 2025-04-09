@@ -1,0 +1,14 @@
+[package]
+name = "updaterootcerts"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+gui = []
+
+[dependencies]
+reqwest = { version = "0.12.15", features = ["blocking"] }
+anyhow = { version = "1.0.97" }
+
+#[cfg(feature = "gui")]
+fltk = "1.5.6"
